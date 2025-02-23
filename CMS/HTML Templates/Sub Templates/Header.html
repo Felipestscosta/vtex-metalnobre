@@ -1,0 +1,158 @@
+<div class="top-fixed">
+  <div class="loading-background loading">
+    <div class="loading-container">
+      <div class="loading-logo-holder">
+        <img src="/arquivos/logo.png" alt="" />
+      </div>
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hidden">
+    <vtex.cmc:welcomeMessage />
+  </div>
+
+  <div class="main-head-wrapper">
+    <header class="main-head max-container">
+      <button class="toggle-menu mobile">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <h1 class="container-logo">
+        <a href="/"
+          ><img
+            src="/arquivos/logo.png"
+            alt="Casa-Sul"
+            class="img-responsive img-logo"
+        /></a>
+      </h1>
+
+      <div class="container-search">
+        <vtex.cmc:fullTextSearchBox />
+      </div>
+
+      <div class="container-profile-controls">
+        <div class="user-login">
+          <a href="/account"><img src="/arquivos/login.png" alt="" /></a>
+        </div>
+
+        <a href="" class="toggler-cart">
+          <img src="/arquivos/carrinho.png" alt="carrinho" />
+          <span class="mini-cart-qty-admake">0</span>
+        </a>
+
+        <div class="search-mobile">
+          <img src="/arquivos/lupa.png" alt="search-mobile" />
+        </div>
+      </div>
+
+      <div class="carrinho">
+        <div id="mini-cart-admake-aux" class="hidden">
+          <vtex.cmc:miniCart />
+        </div>
+        <div class="carrinho-header max-container">
+          <span>Meu Carrinho</span>
+          <div class="toggler-cart">
+            <img src="/arquivos/xlogin.png" class="img-responsive" />
+          </div>
+        </div>
+
+        <div class="carrinho-content max-container">
+          <div class="mini-cart-itens"></div>
+          <div class="cart-inf">
+            <div class="mini-cart-totais">
+              <div class="mini-cart-botao">
+                <a
+                  href="/checkout/#/cart"
+                  class="btn btn-block btn-verde btn-finalizar-compra"
+                >
+                  Finalizar Pedido
+                </a>
+              </div>
+            </div>
+            <div class="calc-frete">
+              <input
+                type="text"
+                class="field-frete"
+                placeholder="calcular frete"
+              />
+              <input type="submit" class="btn-frete" value="Calcular" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="menu-container">
+    <div class="max-container">
+      <ul class="main-menu">
+        <div class="account-mobile mobile">
+          <div class="user-login">
+            <a href="/account">
+              <span class="user-status">
+                <img src="/arquivos/login.png" alt="Login" />
+                <span class="login-link">Olá, entre ou Cadastre-se</span>
+              </span>
+            </a>
+          </div>
+          <div class="close-mobile toggle-menu">
+            <img src="/arquivos/close-mobile.png" alt="Close" />
+          </div>
+        </div>
+        <div class="wishlist-mobile">
+          <a href="/wishlist">
+            <img src="/arquivos/icon-core.png" alt="Lista de Desejos" />
+            <span>Lista de compra</span>
+          </a>
+        </div>
+        <div class="hidden departmentNavigatorholder">
+          <vtex.cmc:departmentNavigator />
+        </div>
+        <div class="catplus">
+          <li
+            style="
+              background: #18090c;
+              color: #200d10;
+              padding: 13px 20px;
+              order: 99;
+              text-transform: uppercase;
+              font-size: 0.8rem;
+            "
+          >
+            <a href="#" target="blank" style="color: #f4f4f4">Outlet</a>
+          </li>
+          <!-- <li class="blog">
+                        <a class="menu-item-texto" href="https://blog.metalnobreacabamentos.com.br/" target="blank">BLOG</a>
+                    </li>
+                    <li class="revista">
+                        <a class="menu-item-texto" href="https://metalnobre.casavip.online/" target="blank">REVISTA</a>
+                    </li> -->
+        </div>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="box-shadow toggle-menu"></div>
+
+<!-- HEADER -->
+<!-- <aside class="carrinho">
+    <div id="mini-cart-admake">
+        <div class="mini-cart-header">
+            <span class="close-cart"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Meu Carrinho</span>
+        </div>
+        <div class="mini-cart-itens">
+
+        </div>
+        <div class="mini-cart-footer">
+
+        </div>
+    </div>
+</aside> -->

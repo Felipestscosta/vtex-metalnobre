@@ -1,0 +1,155 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+<!DOCTYPE html>
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+>
+  <head>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="/arquivos/home.css" />
+  </head>
+
+  <body id="home-page">
+    <vtex:template id="Header" />
+    <!--MAIN BANNER-->
+
+    <section class="main-banner">
+      <article class="banner-desktop">
+        <vtex:contentPlaceHolder id="Banner-Principal (1200)" />
+      </article>
+
+      <article class="banner-mobile">
+        <vtex:contentPlaceHolder id="Banner-Principal (768)" />
+      </article>
+    </section>
+    <aside class="newsletter">
+      <div class="newsletter__content max-container">
+        <div class="newsletter__content__paragraph">
+          <p class="title-news">Receba nossa Newsletter</p>
+          <p>Inscreva-se e fique por dentro de nossas ofertas e novidades</p>
+        </div>
+        <form action="" class="newsletter__form">
+          <input type="hidden" value="true" name="isNewsletterOptIn" />
+          <input
+            type="text"
+            placeholder="Digite aqui o seu email"
+            name="email"
+          />
+          <button type="submit">FAZER PARTE</button>
+        </form>
+      </div>
+    </aside>
+
+    <!-- HOME ICON -->
+    <div class="CorFundo">
+      <section class="container-home-icon max-container">
+        <vtex:contentPlaceHolder id="home-icon" />
+      </section>
+    </div>
+
+    <section class="max-container">
+      <!--  VITRINE 2 -->
+      <section class="js-vitrine max-container vitrine-css">
+        <div class="title-vitrine">
+          <p></p>
+        </div>
+        <div class="container-itens">
+          <vtex:contentPlaceHolder id="vitrine-2" />
+        </div>
+      </section>
+
+      <div class="gridarea">
+        <div id="g1" class="small">
+          <vtex:contentPlaceHolder id="grid-banner1" />
+        </div>
+        <div id="g2" class="small">
+          <vtex:contentPlaceHolder id="grid-banner2" />
+        </div>
+        <div id="g3" class="small">
+          <vtex:contentPlaceHolder id="grid-banner3" />
+        </div>
+        <div id="g4" class="small">
+          <vtex:contentPlaceHolder id="grid-banner4" />
+        </div>
+        <div id="g5" class="square">
+          <vtex:contentPlaceHolder id="grid-banner5" />
+        </div>
+        <div id="g6" class="rec">
+          <vtex:contentPlaceHolder id="grid-banner6" />
+        </div>
+        <div id="g7" class="rec">
+          <vtex:contentPlaceHolder id="grid-banner7" />
+        </div>
+        <div id="g8" class="rec">
+          <vtex:contentPlaceHolder id="grid-banner8" />
+        </div>
+        <div id="g9" class="rec">
+          <vtex:contentPlaceHolder id="grid-banner9" />
+        </div>
+      </div>
+    </section>
+
+    <!--  VITRINE 1 -->
+    <section class="js-vitrine max-container vitrine-css">
+      <div class="title-vitrine">
+        <p></p>
+      </div>
+      <div class="container-itens">
+        <vtex:contentPlaceHolder id="vitrine-1" />
+      </div>
+    </section>
+
+    <!-- MARCAS -->
+    <section class="banner-marcas-home">
+      <div class="max-container">
+        <h2>Marcas</h2>
+        <article class="marcas-banner">
+          <vtex:contentPlaceHolder id="marcas-banner" />
+        </article>
+      </div>
+    </section>
+
+    <!-- BANNER DUPLO -->
+    <section class="banner-duplo-home">
+      <div class="max-container">
+        <article class="banner-duplo">
+          <vtex:contentPlaceHolder id="banner-duplo" />
+        </article>
+      </div>
+    </section>
+
+    <vtex:template id="Footer" />
+    <vtex:template id="commonScripts" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/arquivos/home.js"></script>
+  </body>
+</html>
